@@ -1,6 +1,6 @@
 object frmNewForm: TfrmNewForm
-  Left = 221
-  Top = 39
+  Left = 8
+  Top = -8
   AutoScroll = False
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Othello'
@@ -44,7 +44,7 @@ object frmNewForm: TfrmNewForm
     Wx_ControlOrientation = wxControlVertical
     Wx_IDName = 'ID_WXGRIDSIZER1'
     Wx_IDValue = 1001
-    object casilla: TWxButton
+    object casilla1: TWxButton
       Left = 1
       Top = 1
       Width = 48
@@ -62,7 +62,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_CASILLA'
+      Wx_IDName = 'ID_CASILLA1'
       Wx_IDValue = 1002
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -84,7 +84,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton1: TWxButton
+    object casilla2: TWxButton
       Left = 51
       Top = 1
       Width = 48
@@ -102,7 +102,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON1'
+      Wx_IDName = 'ID_CASILLA2'
       Wx_IDValue = 1009
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -124,7 +124,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton2: TWxButton
+    object casilla3: TWxButton
       Left = 101
       Top = 1
       Width = 48
@@ -142,7 +142,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON2'
+      Wx_IDName = 'ID_CASILLA3'
       Wx_IDValue = 1010
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -164,7 +164,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton3: TWxButton
+    object casilla4: TWxButton
       Left = 151
       Top = 1
       Width = 48
@@ -182,7 +182,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON3'
+      Wx_IDName = 'ID_CASILLA4'
       Wx_IDValue = 1011
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -204,7 +204,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton4: TWxButton
+    object casilla5: TWxButton
       Left = 201
       Top = 1
       Width = 48
@@ -222,7 +222,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON4'
+      Wx_IDName = 'ID_CASILLA'
       Wx_IDValue = 1012
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -244,7 +244,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton5: TWxButton
+    object casilla6: TWxButton
       Left = 251
       Top = 1
       Width = 48
@@ -262,7 +262,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON5'
+      Wx_IDName = 'ID_CASILLA6'
       Wx_IDValue = 1013
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -284,7 +284,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton6: TWxButton
+    object casilla7: TWxButton
       Left = 1
       Top = 51
       Width = 48
@@ -302,7 +302,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON6'
+      Wx_IDName = 'ID_CASILLA7'
       Wx_IDValue = 1014
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -324,7 +324,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton7: TWxButton
+    object casilla8: TWxButton
       Left = 51
       Top = 51
       Width = 48
@@ -342,7 +342,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON7'
+      Wx_IDName = 'ID_CASILLA8'
       Wx_IDValue = 1015
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -364,7 +364,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton8: TWxButton
+    object casilla9: TWxButton
       Left = 101
       Top = 51
       Width = 48
@@ -382,7 +382,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON8'
+      Wx_IDName = 'ID_CASILLA9'
       Wx_IDValue = 1016
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -404,7 +404,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton9: TWxButton
+    object casilla10: TWxButton
       Left = 151
       Top = 51
       Width = 48
@@ -422,7 +422,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON9'
+      Wx_IDName = 'ID_CASILLA10'
       Wx_IDValue = 1017
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -444,7 +444,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton10: TWxButton
+    object casilla11: TWxButton
       Left = 201
       Top = 51
       Width = 48
@@ -462,7 +462,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON10'
+      Wx_IDName = 'ID_CASILLA11'
       Wx_IDValue = 1018
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -484,7 +484,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton11: TWxButton
+    object casilla12: TWxButton
       Left = 251
       Top = 51
       Width = 48
@@ -502,7 +502,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON11'
+      Wx_IDName = 'ID_CASILLA12'
       Wx_IDValue = 1019
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -524,7 +524,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton12: TWxButton
+    object casilla13: TWxButton
       Left = 1
       Top = 101
       Width = 48
@@ -542,7 +542,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON12'
+      Wx_IDName = 'ID_CASILLA13'
       Wx_IDValue = 1020
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -564,7 +564,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton13: TWxButton
+    object casilla14: TWxButton
       Left = 51
       Top = 101
       Width = 48
@@ -582,7 +582,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON13'
+      Wx_IDName = 'ID_CASILLA14'
       Wx_IDValue = 1021
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -604,7 +604,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton14: TWxButton
+    object casilla15: TWxButton
       Left = 101
       Top = 101
       Width = 48
@@ -622,7 +622,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON14'
+      Wx_IDName = 'ID_CASILLA15'
       Wx_IDValue = 1022
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,0'
@@ -644,7 +644,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton15: TWxButton
+    object casilla16: TWxButton
       Left = 151
       Top = 101
       Width = 48
@@ -662,7 +662,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON15'
+      Wx_IDName = 'ID_CASILLA16'
       Wx_IDValue = 1023
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,128,64'
@@ -684,7 +684,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton16: TWxButton
+    object casilla17: TWxButton
       Left = 201
       Top = 101
       Width = 48
@@ -702,7 +702,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON16'
+      Wx_IDName = 'ID_CASILLA17'
       Wx_IDValue = 1024
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -724,7 +724,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton17: TWxButton
+    object casilla18: TWxButton
       Left = 251
       Top = 101
       Width = 48
@@ -742,7 +742,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON17'
+      Wx_IDName = 'ID_CASILLA18'
       Wx_IDValue = 1025
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -764,7 +764,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton18: TWxButton
+    object casilla19: TWxButton
       Left = 1
       Top = 151
       Width = 48
@@ -782,7 +782,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON18'
+      Wx_IDName = 'ID_CASILLA19'
       Wx_IDValue = 1026
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -804,7 +804,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton19: TWxButton
+    object casilla20: TWxButton
       Left = 51
       Top = 151
       Width = 48
@@ -822,7 +822,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON19'
+      Wx_IDName = 'ID_CASILLA20'
       Wx_IDValue = 1027
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -844,7 +844,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton20: TWxButton
+    object casilla21: TWxButton
       Left = 101
       Top = 151
       Width = 48
@@ -862,7 +862,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON20'
+      Wx_IDName = 'ID_CASILLA21'
       Wx_IDValue = 1028
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,128,64'
@@ -884,7 +884,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton21: TWxButton
+    object casilla22: TWxButton
       Left = 151
       Top = 151
       Width = 48
@@ -902,7 +902,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON21'
+      Wx_IDName = 'ID_CASILLA22'
       Wx_IDValue = 1029
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,0'
@@ -924,7 +924,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton22: TWxButton
+    object casilla23: TWxButton
       Left = 201
       Top = 151
       Width = 48
@@ -942,7 +942,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON22'
+      Wx_IDName = 'ID_CASILLA23'
       Wx_IDValue = 1030
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -964,7 +964,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton23: TWxButton
+    object casilla24: TWxButton
       Left = 251
       Top = 151
       Width = 48
@@ -982,7 +982,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON23'
+      Wx_IDName = 'ID_CASILLA24'
       Wx_IDValue = 1031
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1004,7 +1004,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton24: TWxButton
+    object casilla25: TWxButton
       Left = 1
       Top = 201
       Width = 48
@@ -1022,7 +1022,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON24'
+      Wx_IDName = 'ID_CASILLA25'
       Wx_IDValue = 1032
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1044,7 +1044,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton25: TWxButton
+    object casilla26: TWxButton
       Left = 51
       Top = 201
       Width = 48
@@ -1062,7 +1062,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON25'
+      Wx_IDName = 'ID_CASILLA26'
       Wx_IDValue = 1033
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1084,7 +1084,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton26: TWxButton
+    object casilla27: TWxButton
       Left = 101
       Top = 201
       Width = 48
@@ -1102,7 +1102,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON26'
+      Wx_IDName = 'ID_CASILLA27'
       Wx_IDValue = 1034
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1124,7 +1124,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton27: TWxButton
+    object casilla28: TWxButton
       Left = 151
       Top = 201
       Width = 48
@@ -1142,7 +1142,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON27'
+      Wx_IDName = 'ID_CASILLA28'
       Wx_IDValue = 1035
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1164,7 +1164,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton28: TWxButton
+    object casilla29: TWxButton
       Left = 201
       Top = 201
       Width = 48
@@ -1182,7 +1182,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON28'
+      Wx_IDName = 'ID_CASILLA29'
       Wx_IDValue = 1036
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1204,7 +1204,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton29: TWxButton
+    object casilla30: TWxButton
       Left = 251
       Top = 201
       Width = 48
@@ -1222,7 +1222,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON29'
+      Wx_IDName = 'ID_CASILLA30'
       Wx_IDValue = 1037
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1244,7 +1244,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton30: TWxButton
+    object casilla31: TWxButton
       Left = 1
       Top = 251
       Width = 48
@@ -1262,7 +1262,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON30'
+      Wx_IDName = 'ID_CASILLA31'
       Wx_IDValue = 1038
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1284,7 +1284,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton31: TWxButton
+    object casilla32: TWxButton
       Left = 51
       Top = 251
       Width = 48
@@ -1302,7 +1302,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON31'
+      Wx_IDName = 'ID_CASILLA32'
       Wx_IDValue = 1039
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1324,7 +1324,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton32: TWxButton
+    object casilla33: TWxButton
       Left = 101
       Top = 251
       Width = 48
@@ -1342,7 +1342,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON32'
+      Wx_IDName = 'ID_CASILLA33'
       Wx_IDValue = 1040
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1364,7 +1364,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton33: TWxButton
+    object casilla34: TWxButton
       Left = 151
       Top = 251
       Width = 48
@@ -1382,7 +1382,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON33'
+      Wx_IDName = 'ID_CASILLA34'
       Wx_IDValue = 1041
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1404,7 +1404,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton34: TWxButton
+    object casilla35: TWxButton
       Left = 201
       Top = 251
       Width = 48
@@ -1422,7 +1422,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON34'
+      Wx_IDName = 'ID_CASILLA35'
       Wx_IDValue = 1042
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
@@ -1444,7 +1444,7 @@ object frmNewForm: TfrmNewForm
       Wx_Floating_X_Pos = 0
       Wx_Floating_Y_Pos = 0
     end
-    object WxButton35: TWxButton
+    object casilla36: TWxButton
       Left = 251
       Top = 251
       Width = 48
@@ -1462,7 +1462,7 @@ object frmNewForm: TfrmNewForm
       Wx_FGColor = clBlack
       Wx_GeneralStyle = [wxNO_BORDER]
       Wx_Hidden = False
-      Wx_IDName = 'ID_WXBUTTON35'
+      Wx_IDName = 'ID_CASILLA36'
       Wx_IDValue = 1043
       Wx_Border = 1
       InvisibleBGColorString = 'CUS:255,255,255'
