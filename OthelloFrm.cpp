@@ -241,6 +241,8 @@ void OthelloFrm::CreateGUIControls()
 	WxMenuBar1->Append(ID_MNU_JUEGO_1044_Mnu_Obj, _("Juego"));
 	SetMenuBar(WxMenuBar1);
 
+	wxDialogo =  new wxMessageDialog(this, _("¿Esta seguro que quiere iniciar un nuevo juego?"), _("Message box"), wxYES_NO | wxYES_DEFAULT);
+
 	SetTitle(_("Othello"));
 	SetIcon(wxNullIcon);
 	
@@ -277,6 +279,7 @@ void OthelloFrm::casillaClick(wxCommandEvent& event)
 
 void OthelloFrm::Mnunuevojuego1045Click(wxCommandEvent& event)
 {
+    this->wxDialogo->ShowModal();    
 	casilla1->SetBackgroundColour(wxColour(255,255,255));
 	casilla2->SetBackgroundColour(wxColour(255,255,255));
 	casilla3->SetBackgroundColour(wxColour(255,255,255));
