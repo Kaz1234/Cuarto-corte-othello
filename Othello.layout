@@ -19,16 +19,16 @@ LeftChar=1
 Open=1
 Top=0
 CursorCol=1
-CursorRow=1
+CursorRow=9
 TopLine=1
 LeftChar=1
 [Editor_3]
 Open=1
 Top=0
 <<<<<<< Updated upstream
-CursorCol=13
-CursorRow=101
-TopLine=86
+CursorCol=20
+CursorRow=33
+TopLine=22
 =======
 CursorCol=26
 CursorRow=103
@@ -39,15 +39,15 @@ LeftChar=1
 Open=1
 Top=0
 <<<<<<< Updated upstream
-CursorCol=34
-CursorRow=282
-TopLine=263
+CursorCol=56
+CursorRow=355
+TopLine=352
 =======
 CursorCol=26
 CursorRow=322
 TopLine=309
 >>>>>>> Stashed changes
-LeftChar=1
+LeftChar=8
 [Editor_5]
 Open=1
 Top=1
