@@ -30,6 +30,7 @@
 #include <wx/menu.h>
 #include <wx/button.h>
 #include <wx/sizer.h>
+#include <wx/string.h>
 ////Header Include End
 
 ////Dialog Style Start
