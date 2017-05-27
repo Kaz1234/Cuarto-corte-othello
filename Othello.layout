@@ -25,16 +25,28 @@ LeftChar=1
 [Editor_3]
 Open=1
 Top=0
+<<<<<<< Updated upstream
 CursorCol=13
 CursorRow=101
 TopLine=86
+=======
+CursorCol=26
+CursorRow=103
+TopLine=94
+>>>>>>> Stashed changes
 LeftChar=1
 [Editor_4]
 Open=1
 Top=0
+<<<<<<< Updated upstream
 CursorCol=34
 CursorRow=282
 TopLine=263
+=======
+CursorCol=26
+CursorRow=322
+TopLine=309
+>>>>>>> Stashed changes
 LeftChar=1
 [Editor_5]
 Open=1

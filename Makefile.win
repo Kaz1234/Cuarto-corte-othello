@@ -1,7 +1,11 @@
 # Project: Othello
 # Compiler: Default GCC compiler
 # Compiler Type: MingW 3
+<<<<<<< Updated upstream
 # Makefile created by wxDev-C++ IDE 7.4.2.569 on 26/05/17 14:33
+=======
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 26/05/17 22:13
+>>>>>>> Stashed changes
 
 WXLIBNAME = wxmsw29u
 CPP       = g++.exe

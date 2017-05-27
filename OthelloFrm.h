@@ -100,7 +100,9 @@ class OthelloFrm : public wxFrame
 		//change your old form code that are based on the #define control IDs.
 		//#defines may replace a numeric value for the enum names.
 		//Try copy and pasting the below block in your old form header files.
-		int turno;
+		int turno, pto1, pto2, X, Y, tempX, tempY, cont, farol;
+		wxString forma[6][6];
+		wxButton* forma1[6][6];
         enum
 		{
 			////GUI Enum Control ID Start

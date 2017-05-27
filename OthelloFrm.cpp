@@ -250,8 +250,44 @@ void OthelloFrm::CreateGUIControls()
 	GetSizer()->Fit(this);
 	GetSizer()->SetSizeHints(this);
 	Center();
-	
-	////GUI Items Creation End
+    
+    forma1[0][0]= casilla1;
+    forma1[0][1]= casilla2;
+    forma1[0][2]= casilla3;
+    forma1[0][3]= casilla4;
+    forma1[0][4]= casilla5;
+    forma1[0][5]= casilla6;
+    forma1[1][0]= casilla7;
+    forma1[1][1]= casilla8;
+    forma1[1][2]= casilla9;
+    forma1[1][3]= casilla10;
+    forma1[1][4]= casilla11;
+    forma1[1][5]= casilla12;
+    forma1[2][0]= casilla13;
+    forma1[2][1]= casilla14;
+    forma1[2][2]= casilla15;
+    forma1[2][3]= casilla16;
+    forma1[2][4]= casilla17;
+    forma1[2][5]= casilla18;
+    forma1[3][0]= casilla19;
+    forma1[3][1]= casilla20;
+    forma1[3][2]= casilla21;
+    forma1[3][3]= casilla22;
+    forma1[3][4]= casilla23;
+    forma1[3][5]= casilla24;
+    forma1[4][0]= casilla25;
+    forma1[4][1]= casilla26;
+    forma1[4][2]= casilla27;
+    forma1[4][3]= casilla28;
+    forma1[4][4]= casilla29;
+    forma1[4][5]= casilla30;
+    forma1[5][0]= casilla31;
+    forma1[5][1]= casilla32;
+    forma1[5][2]= casilla33;
+    forma1[5][3]= casilla34;
+    forma1[5][4]= casilla35;
+    forma1[5][5]= casilla36;
+
 }
 
 void OthelloFrm::OnClose(wxCloseEvent& event)
@@ -260,17 +296,39 @@ void OthelloFrm::OnClose(wxCloseEvent& event)
 }
 
 /*
- * casillaClick
+ * Con esta funcion se controla todos los botones
  */
 void OthelloFrm::casillaClick(wxCommandEvent& event)
 {
-	wxButton *casilla = (wxButton*) event.GetEventObject();
+	cont = 0;
+    farol = 0;
+    
+    wxButton *casilla = (wxButton*) event.GetEventObject();
 	
 	if(turno == 0){
         casilla->SetBackgroundColour(wxColour(255,255,0));
+        for(int n=0; n<6; n++){
+            for(int m=0; m<6; m++){
+                if(casilla == forma1[n][m]){
+                    forma1[n][m]->SetBackgroundColour(wxColour(255,255,0));
+                    X = n;
+                    Y = m;  
+                    }
+                }
+            }
         this->turno=1;
+        
     }else if(turno == 1){
         casilla->SetBackgroundColour(wxColour(255,128,64));
+        for(int n=0; n<6; n++){
+            for(int m=0; m<6; m++){
+                if(casilla == forma1[n][m]){
+                    forma1[n][m]->SetBackgroundColour(wxColour(255,128,64));
+                    X = n;
+                    Y = m;
+                    }
+                }
+            }
         this->turno=0;
     };
     
