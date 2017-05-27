@@ -295,152 +295,375 @@ void OthelloFrm::OnClose(wxCloseEvent& event)
 	Destroy();
 }
 
-/*
- * Con esta funcion se controla todos los botones
- */
 void OthelloFrm::casillaClick(wxCommandEvent& event)
 {
 	cont = 0;
     farol = 0;
     
-    wxButton*casilla = (wxButton*) event.GetEventObject();
+    wxButton *casilla = (wxButton*) event.GetEventObject();
 	
-	if(turno == 0){//Le toca al primer jugador
+	if(turno == 0){
+        
         casilla->SetBackgroundColour(wxColour(255,255,0));
+        
         for(int n=0; n<6; n++){
             for(int m=0; m<6; m++){
                 if(casilla == forma1[n][m]){
+                    
                     forma1[n][m]->SetBackgroundColour(wxColour(255,255,0));
                     X = n;
-                    Y = m;  
+                    Y = m; 
+                     
                     }
                 }
             }
+            
             tempX=X;
             tempY=Y;
-            do{ /* Dezplazamiento Vertical hacia arriba*/
+            
+            do{ 
                if(tempX>0){
+                    
                tempX=tempX-1;
+               
                }
+               
                if(tempX==0){
-               farol=1;
-               cont=0;
+                    
+                   farol=1;
+                   cont=0;
+                   
                }
                
              if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                    
                  cont=cont+1;
+                 
                }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0){
+                    
                   farol=1;
+                  
                }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                    
                   cont=0;
                   farol=1;
+                  
                }
+               
             }while(farol==0);
             
             for(int i=0;i<=cont;i++){
-            forma1[X-i][Y]->SetBackgroundColour(wxColour(255,255,0));
+                
+                forma1[X-i][Y]->SetBackgroundColour(wxColour(255,255,0));
+                
             }
+            
             farol=0;
             cont=0;
             tempX=X;
-            do{ /* Dezplazamiento Vertical hacia abajo*/
+            
+            do{ 
                 if(tempX<5){
-                tempX=tempX+1;
+                    
+                    tempX=tempX+1;
+                    
                 }
+                
                 if(tempX==5){
-                farol=1;
-                cont=0;
+                    
+                    farol=1;
+                    cont=0;
+                    
                 }
         
            if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                
                  cont=cont+1;
+                 
                }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0){
+                    
                   farol=1;
+                  
                }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                    
                   cont=0;
                   farol=1;
+                  
                }
+               
         }while(farol==0);
         
         for(int i=0;i<=cont;i++){
+            
             forma1[X+i][Y]->SetBackgroundColour(wxColour(255,255,0));
+            
         }
         
-        /*aca se mueven horizontalmente*/
         cont=0;
         farol=0;
         tempX=X;
         tempY=Y;
-        do{ /* Dezplazamiento Vertical hacia la izquierda */
+        
+        do{
             if(tempY>0){
+                
             tempY=tempY-1;
+            
             }
+            
             if(tempY==0){
+                
                 cont=0; 
                 farol=1;
+                
             }
             
          if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                
                  cont=cont+1;
+                 
                }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0){
+                    
                   farol=1;
+                  
                }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                    
                   cont=0;
                   farol=1;
+                  
                }
+               
         }while(farol==0);
         
+        
          for(int i=0;i<=cont;i++){
+                
             forma1[X][Y-i]->SetBackgroundColour(wxColour(255,255,0));
+            
         }
+        
         cont=0;
         farol=0;
         tempY=Y;
-        do{ /* Dezplazamiento Vertical hacia la derecha */
+        
+        do{ 
             if(tempY<5){
-            tempY=tempY+1;
-            }
-            if(tempY==5){
-                farol=1;
-                cont=0;
+                
+                tempY=tempY+1;
+                
             }
             
+            if(tempY==5){
+                
+                farol=1;
+                cont=0;
+                
+            }
            
             if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                
                  cont=cont+1;
+                 
                }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0){
+                    
                   farol=1;
+                  
                }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                    
                   cont=0;
                   farol=1;
                }
+               
         }while(farol==0);
         
          for(int i=0;i<=cont;i++){
+                
             forma1[X][Y+i]->SetBackgroundColour(wxColour(255,255,0));
+            
         }
   
         this->turno=1;
         
        }else if(turno == 1){
+            
         casilla->SetBackgroundColour(wxColour(255,128,64));
+        
         for(int n=0; n<6; n++){
             for(int m=0; m<6; m++){
                 if(casilla == forma1[n][m]){
                     forma1[n][m]->SetBackgroundColour(wxColour(255,128,64));
+                    
                     X = n;
                     Y = m;
+                    
                     }
                 }
             }
+            
+        tempX = X;
+        tempY = Y;
+        
+        do{
+            if(tempX>0){
+                
+                tempX = tempX-1;
+                
+                }
+                if(tempX == 0){
+                    
+                    farol = 1;
+                    cont = 0;
+                    
+                    }
+                    
+            if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol ==0){
+                
+                cont = cont+1;
+                
+                }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol ==0){
+                    
+                    farol = 1;
+                    
+                    }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol ==0){
+                        
+                        cont = 0;
+                        farol = 1;
+                        
+                    }
+                    
+            }while(farol==0);
+        
+        for(int n=0; n<=cont; n++){
+            
+            forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64));
+            
+            }
+            
+            farol = 0;
+            cont = 0;
+            tempX = X;
+            
+            do{
+                if(tempX < 5){
+                    
+                    tempX = tempX+1;
+                    
+                    }
+                    if(tempX == 5){
+                        
+                        farol=1;
+                        cont=0;
+                        
+                    }
+                    
+                    if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0 ){
+                        
+                        cont++;
+                        }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                            
+                            farol = 1;
+                            }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                                
+                                cont = 0;
+                                farol = 1;
+                                
+                            }
+                            
+                }while(farol == 0);
+            
+            for(int n=0; n<=cont; n++){
+                
+                forma1[X + n][Y]->SetBackgroundColour(wxColour(255,128,64));
+            
+            }
+            
+            farol = 0;
+            cont = 0;
+            tempX = X;
+            tempY = Y;
+            
+            do{
+                if(tempY > 0){
+                    
+                    tempY = tempY-1;
+            }
+            
+            if(tempY == 0){
+                
+                farol = 1;
+                cont = 0;
+                
+            }
+            
+            if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0){
+                
+                cont++;
+                
+                }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                    
+                    farol=1;
+                    
+                    }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                        
+                        cont = 0;
+                        farol = 1;
+                        
+                    }
+                    
+        }while(farol==0);
+        
+        for(int n=0; n<=cont; n++){
+            
+            forma1[X][Y-n]->SetBackgroundColour(wxColour(255,128,64));
+            
+        }
+        
+        farol = 0;
+        cont = 0;
+        tempY = Y;
+        
+        do{ 
+              if(tempY<5){
+                    
+                    tempY=tempY+1;
+                    
+                }
+                
+                if(tempY==5){
+                    
+                    farol = 1;
+                    cont = 0;
+                    
+                }
+                
+                if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,0)) && farol==0){
+                    
+                    cont++;
+                    
+                    }else if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,128,64)) && farol==0){
+                        
+                        farol = 1;
+                        
+                        }if(forma1[tempX][tempY]->GetBackgroundColour()==(wxColour(255,255,255)) && farol==0){
+                            
+                            cont = 0;
+                            farol = 1;
+                    }
+ 
+        }while(farol==0);
+        
+        for(int n=0; n<=cont; n++){
+            
+            forma1[X][Y+n]->SetBackgroundColour(wxColour(255,128,64));
+            
+        }
+
         this->turno=0;
-    };
-    
+    }
 }
 
-
-void OthelloFrm::Mnunuevojuego1045Click(wxCommandEvent& event)
-{
+void OthelloFrm::Mnunuevojuego1045Click(wxCommandEvent& event){
+    
     this->wxDialogo->ShowModal();    
 	casilla1->SetBackgroundColour(wxColour(255,255,255));
 	casilla2->SetBackgroundColour(wxColour(255,255,255));
@@ -478,12 +701,12 @@ void OthelloFrm::Mnunuevojuego1045Click(wxCommandEvent& event)
 	casilla34->SetBackgroundColour(wxColour(255,255,255));
 	casilla35->SetBackgroundColour(wxColour(255,255,255));
 	casilla36->SetBackgroundColour(wxColour(255,255,255));
+	
 }
 
-/*
- * Mnusalir1046Click
- */
+
 void OthelloFrm::Mnusalir1046Click(wxCommandEvent& event)
 {
 	Close();
 }
+

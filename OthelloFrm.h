@@ -26,8 +26,8 @@
 //Header Include Start and Header Include End.
 //wxDev-C++ designer will remove them. Add custom headers after the block.
 ////Header Include Start
-#include <wx/msgdlg.h>
 #include <wx/menu.h>
+#include <wx/msgdlg.h>
 #include <wx/button.h>
 #include <wx/sizer.h>
 #include <wx/string.h>
@@ -55,8 +55,8 @@ class OthelloFrm : public wxFrame
 		//GUI Control Declaration Start and GUI Control Declaration End.
 		//wxDev-C++ will remove them. Add custom code after the block.
 		////GUI Control Declaration Start
-		wxMessageDialog *wxDialogo;
 		wxMenuBar *WxMenuBar1;
+		wxMessageDialog *wxDialogo;
 		wxButton *casilla36;
 		wxButton *casilla35;
 		wxButton *casilla34;
